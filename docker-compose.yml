@@ -1,0 +1,16 @@
+version: "2.2"
+services:
+  react-frontend:
+    container_name: docker-react-ts-app-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/kiosk-react-app
+    working_dir: ./kiosk-react-app
+    ports:
+      - 3000:3000
+    command: sh -c "cd /kiosk-react-app && yarn install && yarn start"
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
