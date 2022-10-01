@@ -5,14 +5,11 @@
 - Tailwindcss
 - React
 - React Query (for server state)
-- Reac
 
 ## State Management
+- Context API
+
 
 ### Server Cache
-
-- React Query
-
-### UI State
 
 - React Query
